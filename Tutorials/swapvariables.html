@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Two Variables</title>
+    <script>
+        let a = prompt("Enter the first number");
+        let b = prompt("Enter the second number");
+
+        // Display the initial values before swapping
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById("input").innerHTML = "<h3>Before Swapping: a = " + a + " and b = " + b + "</h3><br>";
+        });
+
+        function swap() {
+            document.getElementById("input").innerHTML = "<h3>Before Swapping: a = " + a + " and b = " + b + "</h3><br>";
+            var temp = a;
+            a = b;
+            b = temp;
+            
+            document.getElementById("output").innerHTML = "<h3>After Swapping: a = " + a + " and b = " + b + "</h3><br>";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="input"></h1>
+    <h1 id="output"></h1>
+    <button onclick="swap()">Swap Variables</button>
+</body>
+</html>

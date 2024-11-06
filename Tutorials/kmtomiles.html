@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometers To Miles</title>
+    <Script>
+        function convert(){
+            let km = document.getElementById("data").value;
+            let miles = km*0.621371;
+            document.getElementById("result").innerHTML = miles + " miles";
+        }
+    </Script>
+</head>
+<body>
+    <form>
+        <h1>Enter Kilometers</h1>
+        <input type="number" placeholder="Enter KM" id="data">
+        <button type="button" onclick="convert()">Convert</button>
+    </form>
+    <h1 id="result"></h1>
+    
+</body>
+</html>

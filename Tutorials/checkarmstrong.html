@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Armstrong Number</title>
+    <script>
+        let num = parseInt(prompt("Enter the number"));
+        function checkArmStrong(num){
+            let temp = num;
+            let sum = 0;
+            while(temp > 0){
+                let digit = temp % 10;
+                temp  = parseInt(temp / 10);
+                
+                sum += digit**3;
+            }
+            console.log(sum);
+            if(sum == num){
+                document.write(num+" is an Armstrong Number");
+            }
+            else{
+                document.write(num+" is not an Armstrong Number");
+            }
+        }
+        checkArmStrong(num);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
